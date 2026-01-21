@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de venta de tacos">
+    <meta name="keywords" content="tacos html formularios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takitous Pro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>TAKITOUSS</h1>
+    </header>
+    <main>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Ordena tu takitou</legend>
+                <label for="tipo">Tipo</label>
+                <select id="tipo" name="tipo">
+                    <option value="1">Suadero</option>
+                    <option value="2">Buche</option>
+                    <option value="3">Asada</option>
+                    <option value="4" selected>Pastor</option>
+                    <option value="5">Carnitas</option>
+                </select>
+                <br><br>
+                <label for="cant">Cantidad</label>
+                <input type="number" name="cant" id="cant" required min="1" max="20" value="1">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Complementous</legend>
+                <input type="checkbox" name="onion" id="onion" value="1">
+                <label for="onion">Cebolla</label>
+                <br>
+                <input type="checkbox" name="cil" id="cil" value="2">
+                <label for="cil">Cilantro</label>
+                <br>
+                <input type="checkbox" name="salsaR" id="salsaR" value="3">
+                <label for="salsaR">Salsa Roja</label>
+                <br>
+                <input type="checkbox" name="salsaV" id="salsaV" value="4">
+                <label for="salsaV">Salsa Verde</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Escoge tu Refrescou</legend>
+                <input type="radio" name="ref" id="coca" checked>
+                <label for="coca">Coca-Cola</label>
+                <br>
+                <input type="radio" name="ref" id="mundet">
+                <label for="mundet">Mundet</label>
+                <br>
+                <input type="radio" name="ref" id="fanta">
+                <label for="fanta">Fanta</label>
+                <br>
+                <input type="radio" name="ref" id="sprite">
+                <label for="sprite">Sprite</label>
+                <br>
+                <input type="radio" name="ref" id="nestea">
+                <label for="nestea">Nestea</label>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Información del Usuariou</legend>
+                <br>
+                <label for="nom">Nombre</label>
+                <input type="text" name="nom" id="nom" required>
+                <br><br>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" value="18" min="6" max="120">  
+                <br><br>
+                <label for="dir">Dirección</label>
+                <br>
+                <textarea name="dir" id="dir" required placeholder="Ingresa tu dirección aquí." cols="20" rows="5"></textarea>
+            </fieldset>
+            <br>
+            <input type="reset" value="Reiniciar">
+        </form>
+    </main>
+    <footer>
+        <p>Marca Registrada 2026&reg;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url('../imgs/wemby.jpeg') fixed;
+    background-size: 100vw 100vh;
+    backdrop-filter: blur(2px);
+}
+
+header{
+    height: 20%;
+    background: rgba(50,50,255,0.5);
+}
+
+textarea{
+    resize: none;
+}
+
+h1{
+    color: #FFF;
+    text-align: center;
+}
+
+form{
+    background: rgba(129,178,221,0.8);
+    text-align: center;
+}
+
+@media screen and (min-width:800px){
+    h1{
+        line-height: 100px;
+    }
+
+    /*colorpick eyedropper*/
+
+    form{
+        width: 60vw;
+        margin: 10px auto;
+    }
+}
+
+
+@media screen and (max-width:800px) and (min-width:600px){
+    h1{
+        line-height: 50px;
+        font-size: 40px;
+    }
+
+    /*colorpick eyedropper*/
+
+    form{
+        width: 100vw;
+        margin: 0px auto;
+    }
+}
